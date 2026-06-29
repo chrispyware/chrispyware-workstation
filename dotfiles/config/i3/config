@@ -58,7 +58,7 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show drun
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -203,3 +203,11 @@ workspace 7 output VGA2
 workspace 8 output VGA2
 workspace 9 output VGA2
 workspace 10 output VGA2
+
+# Chrispyware i3 window colors
+# class 		border	background	text	indicator	child_border
+client.focused		#22e156	#0f0f0f		#f9f9f9	#22e156		#22e156
+client.focused_inactive	#333333	#0f0f0f		#f9f9f9	#333333		#333333
+client.unfocused	#333333	#0f0f0f		#666666	#333333		#333333
+client.urgent		#e05d5d	#0f0f0f		#f9f9f9	#e05d5d		#e05d5d
+client.placeholder	#333333	#0f0f0f		#f9f9f9	#333333		#333333

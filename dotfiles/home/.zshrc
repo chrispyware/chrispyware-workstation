@@ -25,9 +25,10 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 bindkey -e
 
 # Useful aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ls='ls --color=auto'
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
 alias cls='clear'
 alias grep='grep --color=auto'
 
@@ -52,3 +53,8 @@ PROMPT='%F{#22e156}>%f %F{#f9f9f9}%n%f:%F{#22e156}%~%f >'
 precmd() {
   print -Pn "\e]0;> chrispyware_\a"
 }
+
+# Chrispyware LS_COLORS
+if [ -f ~/.config/chrispyware/shell/dircolors ]; then
+  eval "$(dircolors ~/.config/chrispyware/shell/dircolors)"
+fi
