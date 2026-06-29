@@ -20,6 +20,7 @@ mkdir -p ~/.config/i3
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/polybar
 mkdir -p ~/.config/fastfetch
+mkdir -p ~/.config/dunst
 mkdir -p ~/.config/chrispyware
 
 echo "Installing .zshrc..."
@@ -36,6 +37,9 @@ cp "$DOTFILES_DIR/dotfiles/config/polybar/config.ini" ~/.config/polybar/config.i
 
 echo "Installing fastfetch config..."
 cp "$DOTFILES_DIR/dotfiles/config/fastfetch/config.jsonc" ~/.config/fastfetch/config.jsonc
+
+echo "Installing Dunst config..."
+cp "$DOTFILES_DIR/dotfiles/config/dunst/dunstrc" ~/.config/dunst/dunstrc
 
 echo "Installing Chrispyware config..."
 cp -r "$DOTFILES_DIR/dotfiles/config/chrispyware" ~/.config/

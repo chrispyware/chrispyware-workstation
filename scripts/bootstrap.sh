@@ -31,4 +31,12 @@ sudo pacman -Syu --needed \
   ripgrep \
   fzf \
   ttf-jetbrains-mono-nerd \
-  polybar
+  feh \
+  rofi \
+  polybar \
+  fastfetch \
+  firefox \
+  xclip \
+  materia-gtk-theme \
+  dunst \
+  libnotify
