@@ -21,6 +21,7 @@ mkdir -p ~/.config/rofi
 mkdir -p ~/.config/polybar
 mkdir -p ~/.config/fastfetch
 mkdir -p ~/.config/dunst
+mkdir -p ~/.config/picom
 mkdir -p ~/.config/chrispyware
 
 echo "Installing .zshrc..."
@@ -40,6 +41,9 @@ cp "$DOTFILES_DIR/dotfiles/config/fastfetch/config.jsonc" ~/.config/fastfetch/co
 
 echo "Installing Dunst config..."
 cp "$DOTFILES_DIR/dotfiles/config/dunst/dunstrc" ~/.config/dunst/dunstrc
+
+echo "Installing Picom config..."
+cp "$DOTFILES_DIR/dotfiles/config/picom/picom.conf" ~/.config/picom/picom.conf
 
 echo "Installing Chrispyware config..."
 cp -r "$DOTFILES_DIR/dotfiles/config/chrispyware" ~/.config/

@@ -39,4 +39,5 @@ sudo pacman -Syu --needed \
   xclip \
   materia-gtk-theme \
   dunst \
-  libnotify
+  libnotify \
+  picom
