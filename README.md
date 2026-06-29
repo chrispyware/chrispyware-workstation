@@ -10,6 +10,8 @@ Personal Arch Linux + i3 workstation configuration.
 
 ## Current Stack
 
+- Angular CLI
+- Java 21 SDK
 - Arch Linux
 - i3
 - Zsh

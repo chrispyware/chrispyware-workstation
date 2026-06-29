@@ -82,6 +82,12 @@
       }
     },
     {
+      "type": "custom",
+      "key": "Credit",
+      "keyColor": "38;2;34;225;86",
+      "format": "Art by @4s2iilll"
+    },
+    {
       "type": "colors",
       "paddingLeft": 2,
       "symbol": "■"

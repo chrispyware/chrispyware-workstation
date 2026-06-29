@@ -40,4 +40,10 @@ sudo pacman -Syu --needed \
   materia-gtk-theme \
   dunst \
   libnotify \
-  picom
+  picom \
+  code \
+  jdk21-openjdk \
+  maven \
+  gradle \
+  nodejs \
+  npm
