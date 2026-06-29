@@ -70,3 +70,61 @@ element-text {
     background-color: inherit;
     text-color: inherit;
 }
+
+element normal.normal {
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element normal.urgent {
+    background-color: @bg;
+    text-color: #e05d5d;
+}
+
+element normal.active {
+    background-color: @bg;
+    text-color: @accent;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color: @bg;
+}
+
+element selected.urgent {
+    background-color: #e05d5d;
+    text-color: @bg;
+}
+
+element selected.active {
+    background-color: @accent;
+    text-color: @bg;
+}
+
+element alternate.normal {
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+listview {
+    background-color: @bg;
+    text-color: @fg;
+    fixed-height: true;
+    lines: 8;
+    padding: 8px 0 0 0;
+}
+
+scrollbar {
+    background-color: @bg;
+    handle-color: @accent;
+}
