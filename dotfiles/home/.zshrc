@@ -46,6 +46,8 @@ alias gc='git commit'
 alias gp='git push'
 alias gl='git log --oneline --graph --decorate --all'
 
+alias ff='clear && fastfetch'
+
 # Prompt
 PROMPT='%F{#22e156}>%f %F{#f9f9f9}%n%f:%F{#22e156}%~%f >'
 
@@ -57,4 +59,10 @@ precmd() {
 # Chrispyware LS_COLORS
 if [ -f ~/.config/chrispyware/shell/dircolors ]; then
   eval "$(dircolors ~/.config/chrispyware/shell/dircolors)"
+fi
+
+# Chrispyware fastfetch on new terminal
+if [[ -o interactive ]]; then
+  clear
+  fastfetch
 fi

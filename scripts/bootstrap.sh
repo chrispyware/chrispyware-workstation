@@ -30,4 +30,5 @@ sudo pacman -Syu --needed \
   tree \
   ripgrep \
   fzf \
-  ttf-jetbrains-mono-nerd
+  ttf-jetbrains-mono-nerd \
+  polybar
