@@ -35,13 +35,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Run custom startup scripts
-exec --no-startup-id ~/.config/chrispyware/scripts/display.sh
-exec_always --no-startup-id ~/.config/chrispyware/scripts/polybar.sh
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
-exec_always --no-startup-id sh -c 'sleep 1; ~/.config/chrispyware/scripts/wallpaper.sh'
+exec --no-startup-id ~/.config/chrispyware/scripts/startup.sh
 
 # Custom keybind to take screenshots
-bindsym $mod+Print exec flameshot gui
+bindsym Print exec --no-startup-id scrot -s ~/Pictures/screenshots/screenshot-$(date +%Y%m%d-%H%M%S).png
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

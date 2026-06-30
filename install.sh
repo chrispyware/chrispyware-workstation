@@ -23,6 +23,7 @@ mkdir -p ~/.config/fastfetch
 mkdir -p ~/.config/dunst
 mkdir -p ~/.config/picom
 mkdir -p ~/.config/chrispyware
+mkdir -p ~/.config/chrispyware/scripts
 
 echo "Installing .zshrc..."
 cp "$DOTFILES_DIR/dotfiles/home/.zshrc" ~/.zshrc

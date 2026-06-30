@@ -40,6 +40,7 @@ sudo pacman -Syu --needed \
   materia-gtk-theme \
   dunst \
   libnotify \
+  scrot \
   picom \
   code \
   jdk21-openjdk \

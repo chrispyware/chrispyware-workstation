@@ -48,6 +48,8 @@ alias gl='git log --oneline --graph --decorate --all'
 
 alias ff='clear && fastfetch'
 
+alias shot='feh "$(ls -t ~/Pictures/screenshots/*.png | head -1)"'
+
 # Prompt
 PROMPT='%F{#22e156}>%f %F{#f9f9f9}%n%f:%F{#22e156}%~%f >'
 
